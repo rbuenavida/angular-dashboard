@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      .panel {
+        display: flex;
+        border:1px solid black;
+        min-height: 300px;
+        flex-direction: column;
+        max-width:500px;
+      }
+      
+      .panel-body {  
+        display: flex;
+        flex: 1;
+        flex-flow: row wrap;
+        justify-content: center;
+      }
+
+      .panel-heading {
+        padding:10px 10px;
+      }
+
+      .panel-body div.chart {
+        flex: 0 0 100%;
+        min-height:150px;
+        background-color: green;
+      }
+
+      .panel-body div {
+        flex: 1 1 33.33%;
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="panel">
+      <div class="panel-heading">
+        HEADING
+      </div>
+      <div class="panel-body">
+        <div class="chart"></div>
+        <div>HIGH<br/>144</div>
+        <div>MEDIUM<br/>2</div>
+        <div>LOW<br/>3</div>
+      </div>
+    </div>
+</body>
+</html>

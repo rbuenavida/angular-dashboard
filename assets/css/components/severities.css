@@ -1,0 +1,28 @@
+.severities {  
+    display: flex;
+    flex: 1;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: 458px;
+}
+
+.severities div.chart {
+    flex: 0 0 100%;
+    /*min-height:150px;*/
+}
+
+.severities div {
+    flex: 1 1 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.severities .label {
+    font-size: 12px;
+}
+
+.severities .value {
+    font-size: 15px;
+}

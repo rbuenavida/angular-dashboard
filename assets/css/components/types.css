@@ -1,0 +1,62 @@
+.types {   
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 526px;
+}
+
+.type-entry {
+    flex:0 0 50%;
+    border-bottom:1px solid #000;
+    padding-top:10px;
+    min-height:71px;
+}
+
+.type-entry.last-entry {
+    border:0;
+}
+
+.type-entry .icon {
+    margin-left:10px;
+    float:left;
+    width:40px;
+    height:41px;
+    border:1px solid #fff;
+}
+
+.type-entry .details {
+    margin: 5px 0 0 20px;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    text-transform: uppercase;
+}
+
+.type-entry .details p:nth-child(1) {
+    font-size: 19px;
+    margin: 0;
+}
+
+.type-entry .details p:nth-child(2) {
+    font-size: 12px;
+    margin: 15px 0 0 0;
+    width: 80px;
+}
+
+/* icons */
+.attack-indication {
+    background: url("/images/attack_indication_icon.gif") no-repeat;
+}
+.data-leakage {
+    background: url("/images/data_leakage_icon.gif") no-repeat;
+}
+.phishing {
+    background: url("/images/phishing_icon.gif") no-repeat;
+}
+.brand-security {
+    background: url("/images/brand_security_icon.gif") no-repeat;
+}    
+.exploitable-data {
+    background: url("/images/exploitable_data_icon.gif") no-repeat;
+}  
+.vip {
+    background: url("/images/vip_icon.gif") no-repeat;
+}  

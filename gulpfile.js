@@ -12,21 +12,22 @@ var atImport = require('postcss-import');
 var postcss = require('gulp-postcss');
 var cssnext = require('postcss-cssnext');
 var path = require('path');
+var eslint = require('gulp-eslint');
 
 /**
  * The output directory for all the built files.
  */
-const DEST = './public/dist';
+var DEST = './public/dist';
 
 /**
  * The name of the Github repo.
  */
-const REPO = 'insights-assignment';
+var REPO = 'insights-assignment';
 
 /**
  * The base public path of the site.
  */
-const PUBLIC_PATH = path.join('/', (isProd() ? REPO : '.'), '/');
+var PUBLIC_PATH = path.join('/', (isProd() ? REPO : '.'), '/');
 
 function isProd() {
   return process.env.NODE_ENV == 'production';
@@ -48,6 +49,15 @@ gulp.task('jshint', function() {
     .pipe(jshint.reporter('default'));
 });
 
+gulp.task('lint', function() {
+  return gulp.src([
+    'gulpfile.js',
+    'assets/javascript/**/*.js'
+  ])
+  .pipe(eslint())
+  .pipe(eslint.format())
+  .pipe(eslint.failAfterError());
+});
 
 gulp.task('css', function () {
     return gulp.src('./assets/css/main.css')

@@ -45,9 +45,9 @@ var dashboardWebtype = {
                     SOURCES (%)
                 </div>
                 <div class="panel-body sources">
-                    <div ng-repeat="(key, value) in $ctrl.data.Sources" class="source-entry clearfix">
+                    <div ng-repeat="(key, value) in $ctrl.data.Sources" class="source-item">
                         <p class="label">{{ labelFromKey(key) }} </p>
-                        <div id="progressbar">
+                        <div class="progressbar">
                             <!-- obviously this doesn't account for values greater than 100 -->
                             <div style="width:{{ round(value) }}%"></div>
                         </div>

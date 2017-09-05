@@ -9,7 +9,7 @@ function routeProvider($routeProvider){
                 url: '/api/dashboard'
               }).then(function successCallback(response) {
                 return response.data;
-              })
+              });
             }            
           }
       });

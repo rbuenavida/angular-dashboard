@@ -1,0 +1,22 @@
+.section-type {
+    text-align: center;
+    margin-right: 20px;
+    height: 271px;
+    width: 136px;
+}
+
+.section-type.clear-web{
+    background: center 50px url('/images/clear_web.gif') no-repeat;
+}
+
+.section-type.dark-web{
+    background: center 50px url('/images/dark_web.gif') no-repeat ;
+}
+
+.section-type .heading {
+    font-size:19px;
+    color:#fff;
+    text-transform:uppercase;
+    line-height:46px;
+    margin:0;
+}

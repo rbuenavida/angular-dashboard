@@ -1,0 +1,14 @@
+.panel {
+    flex: auto;
+    display: flex;
+    margin: 8px;
+    min-height: 282px;
+    flex-direction: column;
+    background-color:#214a6b;
+}
+
+.panel-heading {
+    padding:10px 10px;
+    background-color: #243C53;
+    font-size: 13px;
+}

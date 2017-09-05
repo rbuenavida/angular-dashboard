@@ -1,0 +1,42 @@
+.sources {
+    display: flex;
+    flex-direction: column;
+    max-width: 322px;
+}
+
+.source-item {
+    padding: 15px 15px 10px 15px;
+}
+
+.source-item p {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.source-item p.label {
+    line-height: 14px;
+    margin: 0;
+    min-width: 160px;
+}
+
+.source-item p.source-value {
+    float: right;
+    margin: 0;        
+}
+
+.progressbar {
+    background-color: #1c374a;
+    border-radius: 13px; /* (height of inner div) / 2 + padding */
+    float: left;
+    width: 88%;
+    margin-top: 5px;
+}
+    
+.progressbar > div {
+    background-color: #8bb5d5;
+    width: 40%; /* Adjusted with Angular */
+    height: 6px;
+    border-radius: 10px;
+}

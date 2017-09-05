@@ -1,0 +1,43 @@
+body {
+    color: #fff;
+    /* padding: 1em; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #192834;
+    font: 400 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+header, 
+footer {
+    flex: 0 0 63px;
+    max-height: 63px;            
+    background: #203c52 10px center url('/images/intsights_logo.gif') no-repeat;
+}
+
+ng-view,
+dashboard,
+dashboard-webtype,
+main {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+}
+
+main {
+    padding: 0 1% 0 1%;
+    background-color:#192834;
+}
+
+main div.content {
+    flex-grow: 1;
+    background-color: #235279;
+    max-width: 1586px;
+    padding-top: 100px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
